@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+.container > div {
+  flex: 1;
+  padding: 0px 20px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.box-blue {
+  background-color: hsl(248, 32%, 49%);
+  padding: 5px 20px;
+  /* padding-right: 20px; */
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* .form-control small {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  text-align: right;
+  opacity: 1;
+} */
+
+.error {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  text-align: right;
+  opacity: 0;
+}
+
+.display-error {
+  opacity: 1;
+}
+
+input {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  padding: 15px 25px;
+}
+
+input:focus {
+  border: 1px solid hsl(248, 32%, 49%);
+}
+
+button {
+  display: block;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid hsl(154, 59%, 45%);
+  box-shadow: 0 2px hsl(154, 59%, 45%);
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+button:active {
+  box-shadow: 0 0 hsl(154, 59%, 45%);
+  transform: translateY(2px);
+}
+small {
+  display: block;
+  color: hsl(154, 59%, 51%);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+small a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
